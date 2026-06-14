@@ -1,0 +1,11 @@
+<article class="course-card" *ngIf="course as currentCourse">
+  <div class="course-meta">
+    <span>Course ID</span>
+    <strong>{{ currentCourse.id }}</strong>
+  </div>
+  <h3>{{ currentCourse.name }}</h3>
+  <p><span>Code:</span> {{ currentCourse.code }}</p>
+  <p><span>Credits:</span> {{ currentCourse.credits }}</p>
+
+  <button type="button" (click)="enrollRequested.emit(currentCourse.id)">Enroll</button>
+</article>

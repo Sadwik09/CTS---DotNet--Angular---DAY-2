@@ -1,0 +1,52 @@
+:host {
+  display: block;
+  min-height: 100dvh;
+  color: #e5eef8;
+  background:
+    radial-gradient(circle at top left, rgba(64, 128, 255, 0.28), transparent 32%),
+    radial-gradient(circle at right center, rgba(0, 212, 170, 0.12), transparent 24%),
+    linear-gradient(160deg, #07111f 0%, #0d1726 48%, #101b2e 100%);
+}
+
+.shell-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+}
+
+.brand {
+  color: #f4f8ff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.85rem;
+}
+
+.nav-links a {
+  color: #c7d7ee;
+  text-decoration: none;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.shell-main {
+  padding: 2rem 1.5rem 3rem;
+}

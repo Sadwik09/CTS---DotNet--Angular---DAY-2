@@ -1,0 +1,130 @@
+:host {
+  display: block;
+}
+
+.hero-card {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 28px;
+  background: rgba(7, 16, 30, 0.72);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+}
+
+.eyebrow {
+  margin: 0 0 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #84d7ff;
+  font-size: 0.78rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+}
+
+.summary {
+  margin: 1rem 0 0;
+  max-width: 56ch;
+  color: #bfd0e5;
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.stat-tile,
+.control-panel {
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 1rem 1.1rem;
+}
+
+.stat-tile span,
+.search-box {
+  display: block;
+  color: #9fb4cd;
+  font-size: 0.9rem;
+}
+
+.stat-tile strong {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 1.25rem;
+}
+
+.control-panel {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+button,
+.course-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.75rem 1.15rem;
+  border-radius: 999px;
+  border: 0;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+}
+
+button {
+  width: fit-content;
+  color: #09111d;
+  background: linear-gradient(135deg, #8ee1ff 0%, #8affc1 100%);
+  box-shadow: 0 14px 30px rgba(92, 214, 255, 0.18);
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+button:not(:disabled):hover,
+.course-link:hover {
+  transform: translateY(-1px);
+}
+
+.message {
+  margin: 0;
+  color: #8affc1;
+}
+
+.search-box {
+  margin-top: 1.5rem;
+  margin-bottom: 0.55rem;
+}
+
+input {
+  width: 100%;
+  max-width: 420px;
+  padding: 0.9rem 1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(4, 10, 18, 0.7);
+  color: #f2f7fd;
+}
+
+.live-value {
+  margin: 0.8rem 0 0;
+  color: #d9e6f7;
+}
+
+.course-link {
+  margin-top: 1.5rem;
+  color: #06101a;
+  background: #f4f8ff;
+}

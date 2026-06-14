@@ -1,0 +1,40 @@
+:host {
+  display: block;
+}
+
+.course-card {
+  display: grid;
+  gap: 0.7rem;
+  min-height: 100%;
+  padding: 1.2rem;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(16, 25, 40, 0.96), rgba(9, 16, 28, 0.94));
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.22);
+}
+
+.course-meta span,
+p span {
+  color: #8ca2bc;
+}
+
+.course-meta strong,
+h3 {
+  color: #f4f8ff;
+}
+
+h3,
+p {
+  margin: 0;
+}
+
+button {
+  margin-top: 0.25rem;
+  width: fit-content;
+  padding: 0.7rem 1rem;
+  border: 0;
+  border-radius: 999px;
+  font-weight: 700;
+  color: #09111d;
+  background: #8ee1ff;
+}

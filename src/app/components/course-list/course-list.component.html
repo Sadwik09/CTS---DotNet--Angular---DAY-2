@@ -1,0 +1,19 @@
+<section class="list-shell">
+  <div class="list-header">
+    <div>
+      <p class="eyebrow">Course catalogue</p>
+      <h2>Available Courses</h2>
+    </div>
+    <a routerLink="/" class="back-link">Back to Home</a>
+  </div>
+
+  <div class="grid">
+    <app-course-card
+      *ngFor="let course of courses"
+      [course]="course"
+      (enrollRequested)="onEnroll($event)"
+    ></app-course-card>
+  </div>
+
+  <p class="selected" *ngIf="selectedCourseId">Selected course ID: {{ selectedCourseId }}</p>
+</section>
