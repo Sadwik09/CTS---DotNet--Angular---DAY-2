@@ -202,3 +202,6 @@ Created for the CTS - DotNet + Angular training program.
 **Happy Coding!** 🚀
 
 For questions or issues, please refer to the course materials or create an issue in the repository.
+
+![Uploading Screenshot 2026-06-14 212934.png…]()
+
